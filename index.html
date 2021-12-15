@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css vanilla -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="logo-image/630x355.jpg" type="image/x-icon">
+    <!-- link font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link bootstrap -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 
+    <title>Hilton Saudi-Arabia</title>
+</head>
+<body style="background-color: whitesmoke;">
+    <header>
+        <!--nav-bar style start here -->
+        <nav>
+           <div class="container-nav">
+               <!--navbar logo picture-->
+              <div>
+                <a href="" class="logo-image"><img src="logo-image/Hilton-Logo.png" alt="hilton hotel and resorts picture logo"></a>
+              </div>
+               <!---navbar toggler button -->
+             <div>
+                <button name="" role="" value="" class="navbar-toggler-btn "  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-level="toggle"><span></span></button>
+             </div>
+              <div class="collapse " id="navbarNav">
+                  <ul>
+                      <li><a href="">Home</a></li> 
+                      <li><a href="">Rooms</a></li>
+                      <li><a href="">Contact</a></li>
+                      <li><a href="">About</a></li>
+                      <li class="booking-link"><a href="">Book Now</a></li>
+                  </ul>
+              </div>
+           </div>
+        </nav>
+    </header>
+    <main>
+        <!--First banner in web page -->
+        <section>
+            <div class="container-bnr">
+                <!-- here is a container check in and check out area for availability -->
+               <div class="container-availability">
+                <div class="hotel-name">
+                    <h1>DoubleTree By HIlton KSA</h1>
+                </div>
+                <div class="check-in">
+                    <label for="checkInDate">Check In</label>
+                    <input type="date" id="checkInDate" value="Check in date" required>
+                </div>
+                <div class="check-out">
+                    <label for="checkOutDate">Check OUt</label>
+                    <input type="date" id="checkOutDate" value="check out date">
+                </div>
+                <div class="adults"> 
+                    <label for="person">Adults</label>
+                    <input type="number" id="person" value="person's like adults" placeholder="adult's or person">
+                </div>
+                <div class="kids">
+                    <label for="kids">kids</label>
+                    <input type="number" id="kids" value="kids like child" placeholder="kids or child" >
+                </div>
+                <div class="submit-btn">
+                    <button type="submit"><span class="search-icon"></span> Search Availability</button>
+                </div>
+               </div>
+            </div>
+        </section>
+        <!-- first banner in web page end here  -->
+        <!--room area start here -->
+        <section>
+            <div class="container-room">
+                <div class="single-room"> 
+                    <img src="/room-image/room_single.jpg" alt="single room picture">
+                   <div class="room-description"> 
+                    <p>Single Room</p>
+                    <p>Form <span>$110</span></p>
+                    <p>Single Bed</p>
+                    <p>15m<sup>2</sup></p>
+                    <div>
+                        <p><i class="fas fa-bath"></i></p>
+                        <p><i class="fas fa-wifi"></i></i></p>
+                        <p><i class="fas fa-phone-alt"></i></p>
+                    </div>
+                    <button type="button">Chose Room</button>
+                
+                   </div>
+                </div>
+                <div class="double-room">
+                    <img src="/room-image/room_double.jpg" alt="double room picture">
+                    <div class="room-description">
+                        <p>Double Room</p>
+                        <p>form <span>$150</span></p>
+                        <p>Quine-size-bed</p>
+                        <p>25m<sub>2</sub> </p>
+                        <div>
+                            <p><i class="fas fa-bath"></i></p>
+                            <p><i class="fas fa-wifi"></i></i></p>
+                            <p><i class="fas fa-phone-alt"></i></p>
+                            <p> <i class="fas fa-tv"></i></p>
+                        </div>
+                        <button type="button">Chose Room</button>
+                    </div>
+                </div>
+                <div class="deluxe-room">
+                    <img src="/room-image/room_deluxe.jpg" alt="deluxe room picture">
+                    <div class="room-description">
+                        <p>Deluxe Room</p>
+                        <p>Form $<span>200</span></p>
+                        <p>King-size-bed</p>
+                        <p>40m<sup>2</sup></p>
+                        <div>
+                            <p><i class="fas fa-bath"></i></p>
+                            <p><i class="fas fa-wifi"></i></i></p>
+                            <p><i class="fas fa-phone-alt"></i></p>
+                            <p> <i class="fas fa-tv"></i></p>
+                            <p><i class="fas fa-glass-martini-alt"></i></p>
+                            <p><i class="fas fa-utensils"></i></p>
+                        </div>
+                        <button type="button">Chose Room</button>
+                    </div>
+                </div>
+                <div class="luxurious-room">
+                    <img src="/room-image/room_luxurious.png" alt="luxurious room picture">
+                    <div class="room-description">
+                        <p>Luxurious Room</p>
+                        <p>Form $ <span>300</span> </p>
+                        <p>Luxurious-bed And Sofa</p>
+                        <p>60m<span>2</span> </p>
+                        <div>
+                            <p><i class="fas fa-bath"></i></p>
+                            <p><i class="fas fa-wifi"></i></i></p>
+                            <p><i class="fas fa-phone-alt"></i></p>
+                            <p> <i class="fas fa-tv"></i></p>
+                            <p><i class="fas fa-glass-martini-alt"></i></p>
+                            <p><i class="fas fa-utensils"></i></p>
+                            <i class="fas fa-swimming-pool"></i>
+                        </div>
+                        <Button type="button">Chose Room</Button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--vanilla js-->
+    <script src="max.js"></script>
+    <!--bootstrap bundle javaScript link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+:root{
+    --font-family:'font Awesome 5 Free';
+    --clr-red:rgba(255, 0, 0, 0.836);
+    --clr-white:#ffffff;
+    --clr-gray:#696969;
+    --clr-light-gray:#858585;
+    --clr-black:#000000;
+    --clr-white-smoke:#f5f5f5;
+    --padding-1rem:1rem;
+    --margin-1rem:1rem;
+    --f-w-normal:200;
+    --f-w-medium:500;
+    --f-w-bold:bold:
+
+}
+/* here is a web application all ul padding and margin and list items none; */
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+}
+/* set all ul li a text-decoration none; */
+ul li a{
+    text-decoration: none;
+}
+/* navbar area style start here */
+/* set container-nav grid for responsive */
+nav {
+    background-color:rgba(255, 0, 0, 0.87);
+    text-align:center;
+}
+/* set image with for mobile and small device width 100% */
+nav > .container-nav > div > .logo-image > img{
+    width: 40%;
+    object-fit:cover;
+}
+nav > .container-nav > div > .navbar-toggler-btn > span::after{
+    content: '\f039';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    margin: 0.7rem ;
+    line-height: 50px;
+    font-size:2rem;
+    border:none;
+    background-color: white;
+    cursor: pointer;
+}
+nav > .container-nav > div > .navbar-toggler-btn {
+    border:none;
+    margin-bottom: 1rem;
+}
+nav > .container-nav > div > .navbar-toggler-btn:focus{
+    outline:none;
+}
+nav > .container-nav > div:nth-child(3)   {
+    background-color: white;
+}
+nav > .container-nav > div > ul li a{
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    padding: 0.5rem 0rem;
+    border:2px solid #ffffff;
+    color:var(--clr-gray);
+    background-color: #f5f5f5;
+    transition: background-color 0.2s ease-in-out,color 0.5s ease-in-out;
+}
+nav > .container-nav > div > ul li a:hover{
+    background-color: var(--clr-white);
+    color:black;
+}
+/* responsive navbar for tablats */
+@media screen and (min-width:600px) {
+    .container-nav{
+        background-color:var(--clr-red);
+    }
+    .container-nav > div:first-child > .logo-image >  img{
+        width: 150px;
+        margin-left: 1rem;
+    }
+  .container-nav {
+      display: grid;
+      grid-template-columns: repeat(12,1fr);
+      grid-template-rows: auto;
+      align-items: center;
+  }
+  .container-nav > div:nth-child(1){
+      grid-area: 1/1/2/2;
+  }
+  .container-nav > div:nth-child(2){
+      grid-area: 1/12/2/13;
+      margin-right: var(--margin-1rem);
+  }
+  .container-nav > div:nth-child(2)  > .navbar-toggler-btn{
+      margin-bottom: 0rem;
+  }
+  .container-nav > div:nth-child(3){
+      grid-area: 2/1/3/13;
+  } 
+  .container-nav > div:nth-child(3) ul li a {
+      text-align: initial;
+  }
+}
+@media screen and (min-width:900px){ 
+    /*here nav set line-height 80px for align logo-image and menu link horizontally*/
+    .container-nav > div:nth-child(2) .navbar-toggler-btn{
+        display:none; /* display none navbar-toggler-btn */
+    }
+    .container-nav > div:nth-child(3){
+        display: block; /* here all navbar ink display block */
+        grid-area: 1/2/2/13;
+    }
+    .container-nav > div:nth-child(3) ul{
+        display: flex;
+        display: -webkit-flex; /* for safari */
+        background-color: var(--clr-red);
+        padding-left: var(--padding-1rem);
+    }
+    .container-nav > div:nth-child(3) ul > .booking-link{
+        margin-left: auto;
+        margin-right:var(--margin-1rem);
+    }
+    .container-nav > div:nth-child(3) ul{
+        margin: 0;
+    }
+    .container-nav > div:nth-child(3) ul li a{
+        line-height: 70px;
+        padding:0.5rem 0.3rem;
+    }
+}
+/* Main Content Start Here */
+/* first banner style here */
+.container-bnr{
+    position: relative;
+    background-image: url('/image/hotel.jpg');
+    height: 500px;
+    background-size:cover;
+    width:95%;
+    margin: 3rem auto 0px auto;
+}
+.container-bnr > .container-availability{
+    position: absolute;
+    top:27%;
+    left: 5%;
+    display: grid;
+    display: -moz-grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    width: 600px;
+    background-color: var(--clr-white);
+}
+.container-bnr > .container-availability > .hotel-name{
+    grid-area:1/1/2/7;
+    background-color:var(--clr-red);
+}
+.container-bnr > .container-availability > .hotel-name > h1{
+    padding: 0.8rem 0.5rem;
+    margin: 0;
+    color: black;
+    font:normal 300  1.3rem  Arial, Helvetica, sans-serif;
+
+}
+.container-availability > .check-in{
+    grid-area: 2/1/3/span 3;
+}
+.container-availability > .check-out{
+    grid-area:2/4/2/7;
+}
+.container-availability > .adults{
+    grid-area: 3/1/4/span 3;
+}
+.container-availability > .kids{
+    grid-area: 3/4/4/7;
+}
+.container-availability > .submit-btn{
+    grid-area: 4/1/5/span 3;
+}
+.container-availability > div input{
+    width: 100%;
+    border:1px solid #ccc;
+    padding: 0.3em;
+}
+.container-availability > div > label::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    margin-right: 0.3rem;
+}
+.container-availability > div > [for="checkInDate"]::before{
+    content: "\f073";
+}
+.container-availability > div > [for="checkOutDate"]::before{
+    content: '\f073';
+}
+.container-availability > div > [for="person"]::before{
+    content: '\f183';
+}
+.container-availability > div > [for="kids"]::before{
+    content: '\f1ae';
+}
+.container-availability > .submit-btn > button{
+    border: none;
+    padding: 10px 18px;
+    background-color: var(--clr-light-gray);
+    color: var(--clr-black);
+    border: 1px solid #ccc;
+    font: lighter 1rem/15px  Geneva, Tahoma, sans-serif;
+}
+@media screen and (max-width:800px){
+    .container-availability > .submit-btn > button {
+        font-size:0.8rem;
+        width: 200px;
+    }
+}
+.container-availability > .submit-btn > button .search-icon::after{
+    content: '\f002';
+    font-family: 'Font Awesome 5 Free';
+    font-weight:bold;
+    margin-right:0.2rem;
+}
+.container-availability > .submit-btn > button:hover{
+    background-color:var(--clr-white-smoke);
+    color: var(--clr-gray);
+}
+.container-availability > div {
+    padding: 0.5rem;
+}
+/* responsive container-availability area */
+@media screen and (max-width:900px){
+    .container-bnr > .container-availability{
+        width: 60%;    
+    }
+}
+@media  screen and (max-width:600px) {
+    .container-bnr > .container-availability{
+        display: initial;
+        top: 10%;
+    }
+    .container-bnr > .container-availability > .hotel-name > h1{
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+}
+/* room  area  style  here */
+.container-room{
+    width: 80%;
+    margin: 0px auto 0px auto;
+}
+.container-room > div {
+    background-color: var(--clr-white);
+    border: 1px solid var(--clr-gray);
+    margin-top:0.5rem;
+}
+.container-room > div  > img{
+    width: 100%;
+    object-fit: cover;
+}
+.container-room > div >  .room-description > div{
+    display: flex;
+    justify-content: center;
+}
+ .container-room > div > .room-description > div > p{
+    padding: 0px 8px;
+} 
+.container-room > div > .room-description{
+    text-align: center;
+    font-size: 1.3rem;
+    margin:1rem 0px 0.5rem 0px;
+    font:normal 300 0.8rem/10px 'Times New Roman', Times, serif;
+}
+.container-room > div > .room-description > p{
+    font-size: 1rem;
+    color: var(--clr-gray);
+}
+.container-room > div > .room-description > button{
+    border:none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    width: 150px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--clr-gray);
+    color: var(--clr-white);
+    font: normal 400 0.8rem 'Times New Roman', Times, serif;
+}
+.container-room > div > .room-description > button:hover{
+    background: var(--clr-white-smoke);
+    color: var(--clr-black);
+}
+.container-room > div > .room-description > button:focus{
+    outline: none;
+}
+@media screen and (min-width:550px) {
+    .container-room{
+        display: grid;
+        display: -moz-grid;
+        display: -ms-grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: auto;
+    }
+    .container-room > .single-room{
+        grid-area: 1/1/2/span 6;
+    }
+    .container-room > .double-room{
+        grid-area: 1/7/2/span 12;
+    }
+    .container-room > .deluxe-room {
+        grid-area: 2/1/3/span 6;
+    }
+    .container-room > .luxurious-room{
+        grid-area: 2 / 7/3/span 12 ;
+    }
+    .container-room > div{
+        margin: 0.6rem 0.6rem;
+    }
+}
+@media screen and (min-width:900px){
+    .container-room > .single-room{
+        grid-area: 1/1/2/span 3;
+    }
+    .container-room > .double-room{
+        grid-area: 1/4/2/ span 3;
+    }
+    .container-room > .deluxe-room{
+        grid-area: 1/ 7 / 2/span 3;
+    }
+    .container-room > .luxurious-room{
+        grid-area: 1/10/2/span 3;
+    }
+}
+
