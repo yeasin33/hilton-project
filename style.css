@@ -334,3 +334,32 @@ nav > .container-nav > div > ul li a:hover{
     }
 }
 
+/* container-hotel area style start here */
+.container-hotel{
+    display: -ms-grid;
+    display: -moz-grid;
+    display:grid;
+    grid-template-columns: rpeat(12,1fr);
+    grid-template-rows:250px 250px;
+    grid-auto-flow: dense;
+    grid-auto-rows: auto;
+}
+.container-hotel > div > img{
+    width: 100%;
+    object-fit: cover;
+}
+.container-hotel > .hotel-image:nth-child(1){
+    grid-area: 1 / 1 /  2 / span 6;
+}
+.container-hotel > .hotel-image:nth-child(2){
+    grid-area: 1/ 7 / 2/span 3;
+}
+.container-hotel > .hotel-image:nth-child(3){
+    grid-area: 1 / 10/ 2/ span 3 ;
+}
+.container-hotel > .hotel-image:nth-child(4){
+    grid-area: 2/ 7 / 3 / span 3;
+}
+.container-hotel > .hotel-image:nth-child(5){
+    grid-area: 2/ 10/ 3 / span 3;
+}
