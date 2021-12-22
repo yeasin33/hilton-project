@@ -375,6 +375,10 @@ nav > .container-nav > div > ul li a:hover{
     background-color: var(--clr-black);
     padding: 2rem 1rem;
 }
+.container-ticket-offer >  h1, h2{
+    font: normal 400 3rem 'Times New Roman', Times, serif;
+    color: var(--clr-gray);
+}
 .container-ticket-offer > div > input[type=email]{
     width: 100%;
     height: 50px;
