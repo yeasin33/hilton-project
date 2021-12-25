@@ -140,7 +140,7 @@ nav > .container-nav > div > ul li a:hover{
 /* first banner style here */
 .container-bnr{
     position: relative;
-    background-image: url('image/hotel.jpg');
+    background-image: url('hotel.jpg');
     height: 500px;
     background-size:cover;
     width:95%;
