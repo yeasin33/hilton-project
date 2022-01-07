@@ -48,28 +48,30 @@
             <div class="container-bnr">
                 <!-- here is a container check in and check out area for availability -->
                <div class="container-availability">
-                <div class="hotel-name">
-                    <h1>DoubleTree By HIlton KSA</h1>
-                </div>
-                <div class="check-in">
-                    <label for="checkInDate">Check In</label>
-                    <input type="date" id="checkInDate" value="Check in date" required>
-                </div>
-                <div class="check-out">
-                    <label for="checkOutDate">Check OUt</label>
-                    <input type="date" id="checkOutDate" value="check out date">
-                </div>
-                <div class="adults"> 
-                    <label for="adults">Adults</label>
-                    <input type="number" id="adults" value="person's like adults" placeholder="adult's or person">
-                </div>
-                <div class="kids">
-                    <label for="child">kids</label>
-                    <input type="number" id="child" value="kids like child" placeholder="kids or child" >
-                </div>
-                <div class="submit-btn">
-                    <button type="submit"><span class="search-icon"></span> Search Availability</button>
-                </div>
+                    <div class="hotel-name">
+                        <h1>DoubleTree By HIlton KSA</h1>
+                    </div>
+                    <form action="">
+                        <div class="check-in">
+                            <label for="checkInDate">Check In</label>
+                            <input type="date" id="checkInDate" value="Check in date" required>
+                        </div>
+                        <div class="check-out">
+                            <label for="checkOutDate">Check OUt</label>
+                            <input type="date" id="checkOutDate" value="check out date">
+                        </div>
+                        <div class="adults"> 
+                            <label for="adults">Adults</label>
+                            <input type="number" id="adults" value="person's like adults" placeholder="adult's or person">
+                        </div>
+                        <div class="kids">
+                            <label for="child">kids</label>
+                            <input type="number" id="child" value="kids like child" placeholder="kids or child" >
+                        </div>
+                        <div class="submit-btn">
+                            <button type="submit"><span class="search-icon"></span> Search Availability</button>
+                        </div>
+                    </form>
                </div>
             </div>
         </section>
@@ -189,6 +191,7 @@
             <div class="container-ticket-offer">
                 <h1>Get The Best Offers First!</h1>
                 <h2>Join Our Newsletter</h2>
+              <form action="">
                 <div>
                     <label class="email" for="email">E-Mail</label>
                     <input type="email" id="email"  placeholder="Enter Your Email Address" >
@@ -197,6 +200,7 @@
                     <label for="submit-btn"></label>
                     <input type="submit" id="submit-btn" value="submit">
                 </div>
+              </form>
             </div>
         </section>
         <!--contact area start here -->
@@ -214,6 +218,7 @@
                     </ul>
                 </div>
                 <div class="send-massage-area">
+                  <form action="">
                     <div>
                         <label for="name"></label>
                         <input class="some" type="text" id="name" value="name" placeholder="Enter your name">
@@ -226,10 +231,15 @@
                         <label for="massage"></label>
                        <textarea  name="massage" id="massage" cols="30" rows="10" placeholder="Write your Question"></textarea>
                     </div>
+                    <div>
+                        <button class="submit-massage-btn" type="submit">Submit</button>
+                        <button class="reset-massage-btn" type="reset">Reset</button>
+                    </div>
+                  </form>
                 </div>
             </div>
         </section>
-        \
+        
     </main>
     <!--vanilla js-->
     <script src="max.js"></script>
