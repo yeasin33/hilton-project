@@ -342,7 +342,7 @@ nav > .container-nav > div > ul li a:hover{
     display: -ms-grid;
     display: -moz-grid;
     display:grid;
-    grid-template-columns: repeat( auto-fit , minmax(12,1fr));
+    grid-template-columns: repeat( auto-fit , (12,1fr));
     grid-gap: 5px;
     grid-auto-flow: dense;
     grid-auto-rows: auto;
@@ -537,4 +537,13 @@ nav > .container-nav > div > ul li a:hover{
         font-size: initial;
     }
 
+}
+footer{
+    background-color: #000000;
+    margin-top: 1rem;
+}
+footer > h1{
+    padding: 1rem 0.5rem;
+    color: #ccc;
+    text-align: center;
 }
