@@ -539,11 +539,34 @@ nav > .container-nav > div > ul li a:hover{
 
 }
 footer{
-    background-color: #000000;
-    margin-top: 1rem;
+    background-color:#d3d3d3;
+    color: var(--clr-black);
 }
-footer > h1{
-    padding: 1rem 0.5rem;
-    color: #ccc;
-    text-align: center;
+footer > .container-footer {
+    display: -moz-grid;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+footer > .container-footer > div:first-child{
+    grid-area: 1/1/2/4;
+}
+footer > .container-footer > div:nth-child(2){
+    grid-area: 1/4/2/9;
+}
+footer > .container-footer > div:nth-child(3){
+    grid-area: 1 / 9 / 2 / 13;
+}
+footer > .container-footer > div:first-child h1{
+    font: normal small-caps bold 1.3rem Georgia, 'Times New Roman', Times, serif;
+}
+footer > .container-footer > div:first-child .phone-number{
+    font-size: 1.1rem;
+    color:var(--clr-black);
+    margin-bottom: 0rem;
+}
+footer > .container-footer > .social-media-icon > ul{
+    display: -ms-flexbox; 
+    display: flex;
 }

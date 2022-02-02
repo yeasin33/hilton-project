@@ -32,9 +32,9 @@
              </div>
               <div class="collapse " id="navbarNav">
                   <ul>
-                      <li><a href="">Home</a></li> 
-                      <li><a href="">Rooms</a></li>
-                      <li><a href="">Contact</a></li>
+                      <li><a  href="#banner">Home</a></li> 
+                      <li><a href="#room">Rooms</a></li>
+                      <li><a href="#contact">Contact</a></li>
                       <li><a href="">About</a></li>
                       <li class="booking-link"><a href="">Book Now</a></li>
                   </ul>
@@ -45,7 +45,7 @@
     <main>
         <!--First banner in web page -->
         <section>
-            <div class="container-bnr">
+            <div id="banner" class="container-bnr">
                 <!-- here is a container check in and check out area for availability -->
                <div class="container-availability">
                     <div class="hotel-name">
@@ -78,7 +78,7 @@
         <!-- first banner in web page end here  -->
         <!--room area start here -->
         <section>
-            <div class="container-room">
+            <div id="room" class="container-room">
                 <div class="single-room"> 
                     <img src="room-image/room_single.jpg" alt="single room picture">
                    <div class="room-description"> 
@@ -205,7 +205,7 @@
         </section>
         <!--contact area start here -->
         <section>
-            <div class="container-contact">
+            <div id="contact" class="container-contact">
                <div class="contact-status">
                     <h1>Contact with us:</h1>
                     <h2>if you have any question, do not hesitate to aks them</h2>
@@ -221,11 +221,11 @@
                   <form action="">
                     <div>
                         <label for="name"></label>
-                        <input class="some" type="text" id="name" value="name" placeholder="Enter your name">
+                        <input class="some" type="text" id="name" value="" placeholder="Enter your name">
                     </div>
                     <div>
                         <label for="email"></label>
-                        <input type="email" id="email" value="email" placeholder="Enter Your Email">
+                        <input type="email" id="email" value="" placeholder="Enter Your Email">
                     </div>
                     <div>
                         <label for="massage"></label>
@@ -241,7 +241,36 @@
         </section>
     </main>
     <footer>
-        <h1>All Right Reserved</h1>
+        <section class="container-footer">
+            <div>
+                <h1>Call Us Today</h1>
+                <p class="phone-number"><strong>Toll Free</strong> 1-333-000-4589</p>
+                <p></p>
+            </div>  
+            <div>
+                <ul>
+                    <li><a href="">Our Service</a></li>
+                    <li><a href="">Trams</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="social-media-icon">
+                <h2>Follow Us:</h2>
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-snapchat-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>All Right Reserved</h1>
+            </div>
+        </section>
     </footer>
     <!--vanilla js-->
     <script src="max.js"></script>
